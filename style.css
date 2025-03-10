@@ -1,0 +1,220 @@
+/* tyylit */ 
+body {
+    background-image: url(taustakuva.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgba(38, 118, 29, 0.5); /* väriä tummennettu suunnitelmasta selkeyden vuoksi */
+    color: #E8ECE7;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.header-main {
+    display: flex;
+    height: 40px;
+}
+
+.header-vasen {
+    width: 25%;
+    text-align: left;
+}
+
+.header-oikea {
+    width: 50%;
+}
+
+.header-vasen img {
+    height: 100%;
+    width: 30%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* tekstit keskelle */
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #E8ECE7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #0a0a0a;
+    text-decoration: underline;
+}
+
+nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.3); /* taustaväri */
+    color: #0a0a0a; /* tekstin väri */
+    font-weight: bold;
+    padding: 5px 10px; /* tilaa ympärille */
+    border-radius: 5px; /*kulmien pyöristys*/
+
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column; /* kasaa h1, p, vertikaalisesti */
+    justify-content: center; 
+    align-items: center; /* sisällöt keskelle */
+    min-height: calc(100vh - 100px); /* 100vh miinus headerin ja footerin korkeus */
+    margin-top: 05px; /* extra margin pois */
+    text-align: center; /*tekstit keskelle*/
+
+}
+
+/* nappirivi */
+.nappirivi {
+    display: flex; /* napit menee vierekkäin */
+    gap: 50px; /* nappien väli */
+    justify-content: center; /* keskittää napit */
+
+}
+
+
+/* yhteystieto linkkien värit */
+#yhteystiedot {
+    color: #E8ECE7; 
+}
+
+#yhteystiedot:hover {
+    color: #136dce; /* hover väri */
+}
+
+/* linkkien värit */
+a {
+    color: #E8ECE7; 
+}
+
+/* Fonttikoot ja tyylit */
+h1 {
+    font-size: 44px;
+    color: #E8ECE7;
+    margin: 15px; /* extra margin pois */
+    padding: 0; /* padding pois */
+}
+
+h2 {
+    font-size: 36px;
+    color: #E8ECE7;
+    margin: 15px; /* extra margin pois */
+    padding: 0; /* padding pois */
+}
+
+/* Help desk */
+h3 {
+    font-size: 28px;
+    color: #E8ECE7;
+    margin: 15px; /* extra margin pois */
+    padding: 0; /* padding pois */
+}
+
+/* pääkonttori */
+h4 {
+    font-size: 28px;
+    color: #E8ECE7;
+    margin: 15px; /* extra margin pois */
+    padding: 0; /* padding pois */
+}
+
+h5 {
+    font-size: 24px;
+    color: #E8ECE7;
+    margin: 15px; /* extra margin pois */
+    padding: 0; /* padding pois */
+}
+
+/* Stadin Golf */
+h6 {
+    font-size: 28px;
+    color: #E8ECE7;
+    margin: 15px; /* extra margin pois */
+    padding: 0; /* padding pois */
+}
+
+p {
+    font-size: 18px;
+    color: #E8ECE7;
+    margin: 15px; /* extra margin pois */
+    padding: 0; /* padding pois */
+}
+
+/* nappi tyyli */
+.center-button {
+    background-color: rgba(10, 10, 10, 0.15);
+    color: #E8ECE7;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px; /* väli h1/p ja nappi */
+    margin-bottom: 30px; /* napin alle tilaa */
+    border: 1px solid white;
+}
+
+.center-button:hover {
+    background-color: #0a0a0a;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(38, 118, 29, 0.3); /* väriä tummennettu suunnitelmasta selkeyden vuoksi */
+    color: #E8ECE7;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    color: #E8ECE7; /* footer texti väri */
+}
+
+.footer-main {
+    display: flex;
+}
+
+.footer-vasen {
+    width: 33%;
+    text-align: left;
+}
+
+.footer-oikea {
+    width: 33%;
+}
+
+.footer-oikea a {
+    font-size: 14px;
+}
+/* vielä tehtävää: */
+
+ 
+
+/* mobiilissa napit päällekäin */
+
+@media (max-width: 768px) {
+    .nappirivi {
+        flex-direction: column; /* rivi pystysuuntaiseksi */
+        gap: 10px; 
+        align-items: center;
+    }
+}
